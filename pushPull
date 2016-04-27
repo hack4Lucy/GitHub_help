@@ -1,0 +1,35 @@
+
+## How to create a Repository and clone it to your local system:
+        * create the repository in your GitHub personal page
+        * copy the URL address for cloning
+        * go to the command line:
+                > cd .../gitHubCenter/ 
+                > git clone https://github.com/myAccount/GitTest1.git                 
+ 
+## How to sync files from terminal to your GitHub account:
+        * open gitHub Desktop
+        * drag and drop your project folder
+        * login into your online gitHub account
+        * now go to the command line and type:
+                # git init (This creates .git/ in your working folder)
+                # git status
+                # git add --all (or git add *)        // make sure that the project folder is put inside the repository;
+                # git status
+                # git commit -m "Update myfile.php file "
+                # git push
+
+## How to pull updated file from GitHub repository to your local system?
+      * Go to the terminal and type: git pull
+        
+## How to create folder in gitHub repo? [source: stackoverflow - moopet]
+      * git doesn't store empty folders. Just make sure there's a file in the folder like doc/foo.txt 
+        and run git add doc or git add doc/foo.txt and the folder will be added to your local repo 
+        once you've committed (and appear on github once you've pushed it)
+        
+## How to pull?
+   > git pull origin master
+        
+## Git pull is not possible, because of unmerged files. ;
+  > git status   /* to see which file is added on the repo */
+  > git stash
+  > git pull --rebase
