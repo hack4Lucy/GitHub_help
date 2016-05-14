@@ -33,3 +33,8 @@
   > git status   /* to see which file is added on the repo */
   > git stash
   > git pull --rebase
+  
+## add repo
+  > git remote add myGitHubRepo https://github.com/hack4Lucy/Projects.git
+  > git remote
+  > git push -u myGitHubRepo master
