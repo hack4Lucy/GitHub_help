@@ -1,0 +1,8 @@
+## Git: How to commit a manually deleted file? [duplicate]
+## Staging Deleted files
+## Source: http://stackoverflow.com/questions/12373733/staging-deleted-files
+   > git add -u
+   ## Then, update the repo
+   > git add *
+   > git commit -m "blah blah"
+   > git push
